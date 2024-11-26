@@ -4,10 +4,10 @@ include_once("connection.php");
 $statement=$conn->prepare("
 DROP TABLE IF EXISTS tbl_users;
 CREATE TABLE tbl_users
-(UserID INT(4) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+(user_id INT(4) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 gender VARCHAR(1) NOT NULL,
 surname VARCHAR(20) NOT NULL,
-forename VARCHAR(20) NOT NULL,
+firstname VARCHAR(20) NOT NULL,
 password VARCHAR(20) NOT NULL,
 house VARCHAR(20) NOT NULL,
 year INT(2) NOT NULL,
