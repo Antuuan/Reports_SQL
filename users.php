@@ -26,6 +26,8 @@
     <input type="submit" value="add user">
     </form>
 
+    <h3>Current Users</h3>
+
     <!-- printing the database -->
     <?php
         include_once("connection.php");
@@ -36,7 +38,8 @@
         // while loop to print each row
         while($row=$stmt->fetch(PDO::FETCH_ASSOC))
         {
-            print_r($row);
+            #print_r($row);
+            echo($row["firstname"]." ".$row["surname"]."<br>");
         }
     ?>
 

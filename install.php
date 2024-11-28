@@ -43,6 +43,8 @@ PRIMARY KEY(subjectid,userid));
 $statement->execute();
 $statement->closeCursor();
 
-echo("<br>tbl_users created")
+echo("<br>tbl_users created");
+echo("<br>tbl_subjects created");
+echo("<br>tbl_pupilstudies created");
 
 ?>

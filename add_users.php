@@ -7,13 +7,13 @@ echo($_POST["firstname"]);
 
 // looks at role and does if statements
 switch($_POST["role"]){
-	case "Pupil":
+	case "pupil":
 		$role=0;
 		break;
-	case "Teacher":
+	case "teacher":
 		$role=1;
 		break;
-	case "Admin":
+	case "admin":
 		$role=2;
 		break;
 };

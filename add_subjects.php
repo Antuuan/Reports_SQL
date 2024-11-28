@@ -9,4 +9,6 @@ $stmt->bindParam(':subjectname', $_POST["subjectname"]);
 $stmt->bindParam(':teacher', $_POST["teacher"]);
 
 $stmt->execute();
+
+
 ?>
