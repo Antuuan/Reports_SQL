@@ -26,6 +26,20 @@
     <input type="submit" value="add user">
     </form>
 
+    <!-- printing the database -->
+    <?php
+        include_once("connection.php");
+        $stmt = $conn->prepare("SELECT * FROM tbl_users;");
+
+        $stmt->execute();
+
+        // while loop to print each row
+        while($row=$stmt->fetch(PDO::FETCH_ASSOC))
+        {
+            print_r($row);
+        }
+    ?>
+
 </body>
 </html>
 
